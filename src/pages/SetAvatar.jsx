@@ -62,7 +62,7 @@ export default function SetAvatar() {
                   user.isAvatarImageSet = true;
                   user.avatarImage = data.image;
                   localStorage.setItem("chat-app-user", JSON.stringify(user));
-                  navigate('/chat');
+                  navigate('/');
               } else {
                   toast.error("Error setting avatar. Please try again", toastOptions);
               }
